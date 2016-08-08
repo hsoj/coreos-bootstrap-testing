@@ -1,0 +1,3 @@
+[submodule "hsoj.coreos-bootstrap"]
+	path = hsoj.coreos-bootstrap
+	url = https://hsoj@github.com/hsoj/coreos-bootstrap.git
