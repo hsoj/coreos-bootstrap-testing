@@ -10,7 +10,7 @@ Vagrant.configure(API_VERSION) do |config|
         alpha.vm.provision "ansible" do |ansible|
             ansible.playbook = "test.yml"
             ansible.groups = {
-                "test" => ["alpha",]
+                "coreos" => ["alpha",]
             }
         end
     end
@@ -22,7 +22,7 @@ Vagrant.configure(API_VERSION) do |config|
         beta.vm.provision "ansible" do |ansible|
             ansible.playbook = "test.yml"
             ansible.groups = {
-                "test" => ["beta",]
+                "coreos" => ["beta",]
             }
         end
     end
@@ -34,7 +34,7 @@ Vagrant.configure(API_VERSION) do |config|
         stable.vm.provision "ansible" do |ansible|
             ansible.playbook = "test.yml"
             ansible.groups = {
-                "test" => ["stable",]
+                "coreos" => ["stable",]
             }
         end
     end

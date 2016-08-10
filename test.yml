@@ -1,0 +1,6 @@
+---
+- name: Bootstrap CoreOS instances.
+  hosts: coreos
+  gather_facts: false
+  roles:
+    - { role: hsoj.coreos-bootstrap }
